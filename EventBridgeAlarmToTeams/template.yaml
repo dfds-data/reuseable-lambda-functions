@@ -3,6 +3,11 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Sample SAM Template for HelloWorld
 
+Parameters:
+  WebhookUri:
+    Type: String
+    Description: The WebHook URI to post the event to
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -14,6 +19,10 @@ Resources:
     Properties:
       PackageType: Image
       MemorySize: 128
+      Environment:
+        Variables:
+          WEBHOOK_URI: !Sub ${WebhookUri}
+          
     Metadata:
       DockerTag: dotnetcore3.1-v1
       DockerContext: ./src/AlarmPostToWebHook
