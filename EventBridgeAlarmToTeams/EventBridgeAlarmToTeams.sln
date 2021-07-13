@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmPostToWebHook", "src\AlarmPostToWebHook\AlarmPostToWebHook.csproj", "{3A1B5A5E-76C0-4D68-853B-75FC82BB2604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmPostToWebHook.Tests", "test\AlarmPostToWebHook.Test\AlarmPostToWebHook.Tests.csproj", "{21F0D2F8-B6A7-471B-B908-FE486DCE7C06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AD05880-C3C9-4534-A2AA-A43315E5C96D}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	omnisharp.json = omnisharp.json
+	README.md = README.md
+	template.yaml = template.yaml
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A1B5A5E-76C0-4D68-853B-75FC82BB2604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1B5A5E-76C0-4D68-853B-75FC82BB2604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1B5A5E-76C0-4D68-853B-75FC82BB2604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1B5A5E-76C0-4D68-853B-75FC82BB2604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F0D2F8-B6A7-471B-B908-FE486DCE7C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F0D2F8-B6A7-471B-B908-FE486DCE7C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F0D2F8-B6A7-471B-B908-FE486DCE7C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F0D2F8-B6A7-471B-B908-FE486DCE7C06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
